@@ -38,15 +38,7 @@ function getCurrentShowTimeSeconds() {
 
 function update(){
 
-    var nextShowTimeSeconds = getCurrentShowTimeSeconds();
-
-    var nextHours = parseInt( nextShowTimeSeconds / 3600);
-    var nextMinutes = parseInt( (nextShowTimeSeconds - nextHours * 3600)/60 );
-    var nextSeconds = nextShowTimeSeconds % 60;
-
-    var curHours = parseInt( curShowTimeSeconds / 3600);
-    var curMinutes = parseInt( (curShowTimeSeconds - curHours * 3600)/60 );
-    var curSeconds = curShowTimeSeconds % 60;
+    var nextShowTimeSeconds = getCurrentShowTimeSeconds();  
 
     if( nextSeconds != curSeconds ){
 
